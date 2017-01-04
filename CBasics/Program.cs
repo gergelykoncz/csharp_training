@@ -4,8 +4,26 @@ namespace CBasics
 {
     class Program
     {
+        struct Employee
+        {
+            public string Name { get; set; }
+            public int Salary { get; set; }
+        }
+
+        static void AddBonus(Employee e)
+        {
+            e.Salary += 100;
+        }
+
         static void Main(string[] args)
         {
+            var e = new Employee();
+            e.Name = "Bob";
+            e.Salary = 10000;
+
+            AddBonus(e);
+            Console.Write("{0}'s salary is now {1}", e.Name, e.Salary);
+
             //Set the title of our console window
             Console.Title = "My awesome console title";
             //Make it look like the Matrix

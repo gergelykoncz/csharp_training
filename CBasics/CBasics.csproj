@@ -47,6 +47,7 @@
     <Compile Include="DataTypes\Strings.cs" />
     <Compile Include="DataTypes\TypeConversions.cs" />
     <Compile Include="DataTypes\UsingNew.cs" />
+    <Compile Include="Methods\Passing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
